@@ -1,0 +1,13 @@
+total=()
+mark=()
+a=int(input("enter the number of students:"))
+for i in range(1,a+1):
+    print("\nStudent ",i)
+    mark1=int(input("enter the marks for first subject:"))
+    mark2=int(input("enter the marks for second subject:"))
+    mark3=int(input("enter the marks for third subject:"))
+    print("total marks obtained: ",mark1+mark2+mark3)
+    print("average marks obtained: ",(mark1+mark2+mark3)/3)
+    mark=(mark1,mark2,mark3)
+    total=total+(mark,)
+print("tuple: ",total)
